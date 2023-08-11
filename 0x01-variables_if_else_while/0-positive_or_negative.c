@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - display if the number is positive |  negative | zero
- * Return: return 0 and exit the program
+ * main - Entry point
+ * Description: Display if the number is positive |  negative | zero
+ * Return: return 0(success) and exit the program
  */
 int main(void)
 {
