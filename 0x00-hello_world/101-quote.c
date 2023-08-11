@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * main - print a text
- * You are not allowed to use printf or puts
+ * main - Entry point
+ * Description: print a text but you are not allowed to use printf or puts
  * Return: 1 and exit
  */
 
