@@ -17,21 +17,22 @@
 
 void puts_half(char *str)
 {
-	long int half;
-	long int length = strlen(str);
-	long int c;
+	int len = strlen(str);
 
 	/* number of characters is even */
-	if (length % 2 == 0)
-		half = length / 2;
+	if (len % 2 == 0)
+		len = len / 2;
 
 	/* number of characters is odd */
 	else
-		half = (length - 1) / 2;
+		len = (len + 1) / 2;
 
 	/* prints half of a string */
-	for (c = half; str[c] != '\0'; c++)
-		_putchar(str[c]);
+	while (*(str + len) != '\0')
+	{
+		_putchar(*(str + len));
+		len++;
+	}
 
 	_putchar('\n');
 
