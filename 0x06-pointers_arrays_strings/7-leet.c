@@ -1,9 +1,18 @@
 /**
- * leet - breaking out the leet speak.
- * @s: string to make 1337
+ * leet - encodes a string into 1337.
  *
- * Return: a point the s
+ * Letters a and A should be replaced by 4
+ * Letters e and E should be replaced by 3
+ * Letters o and O should be replaced by 0
+ * Letters t and T should be replaced by 7
+ * Letters l and L should be replaced by 1
+ *
+ *
+ * @s: string pointer
+ *
+ * Return: string encoded into 1337
  */
+
 char *leet(char *s)
 {
 	char lt[10][2] = {
