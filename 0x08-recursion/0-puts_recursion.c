@@ -4,6 +4,9 @@
 /**
  * _puts_recursion -  prints a string, followed by a new line.
  *
+ * Description: The standard library provides a similar function:
+ * puts. Run man puts to learn more.
+ *
  * @s: pointer to a a string
  *
  * Return: NULL
