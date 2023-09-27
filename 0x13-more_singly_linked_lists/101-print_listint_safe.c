@@ -2,11 +2,11 @@
 
 
 /**
- * find_listint_loop - finds a loop in listint_t linked list
+ * find_listint_loop_pl - finds a loop in listint_t linked list
  * @head: linked list pointer to search
  * Return: the address of the node where loop starts/returns, NULL if no loop
  */
-listint_t *find_listint_loop(listint_t *head)
+listint_t *find_listint_loop_pl(listint_t *head)
 {
 	listint_t *ptr, *end;
 
@@ -46,7 +46,7 @@ size_t print_listint_safe(const listint_t *head)
 	int loop = 1;
 	listint_t *loop_node;
 
-	loop_node = find_listint_loop((listint_t *) head);
+	loop_node = find_listint_loop_pl((listint_t *) head);
 
 	/* A loop was found */
 	while (head != NULL && (head != loop_node || loop))
