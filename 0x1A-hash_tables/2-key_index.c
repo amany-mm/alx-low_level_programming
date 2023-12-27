@@ -13,7 +13,9 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	if (size == 0)
 		return (0);
 
+	/* Get the index by giving the key to the hashing function*/
 	idx = hash_djb2(key);
 
+	/* Assure the index in the hashtable array range*/
 	return (idx % size);
 }
