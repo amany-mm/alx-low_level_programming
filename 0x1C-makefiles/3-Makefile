@@ -1,15 +1,21 @@
+# Usage: make [all/clean/oclean/fclean] -f [file]
+
+
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
+# make all == makes executable
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
+# make clean == deletes tmp files & executable
 clean:
 	$(RM) *~ $(NAME)
 
+# make oclean = deletes object files
 oclean:
 	$(RM) $(OBJ)
 
