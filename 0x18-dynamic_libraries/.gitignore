@@ -1,0 +1,14 @@
+# Object files (with extensions)
+*.o
+*.out
+
+# Object files (without extensions)
+*
+!/**/
+!*.*
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
